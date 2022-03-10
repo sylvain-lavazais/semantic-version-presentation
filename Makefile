@@ -5,4 +5,4 @@ help: ## Print this message
 
 .PHONY: presentation
 presentation: ## Start the presentation web server
-	@npm --prefix ./Presentation/ run start
+	@docker run --rm -p 1948:1948 -p 35729:35729 -v $(pwd)/Presentation:/slides webpronl/reveal-md:latest /slides --watch
