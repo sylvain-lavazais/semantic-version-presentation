@@ -1,11 +1,16 @@
-# Title
+# Semantic Version
 
-- Point 1
-- Point 2
+(horizontal separator)
 
 ---
 
-## Second slide
+## second slide
+
+(vertical separator)
+
+----
+
+## sub section
 
 > Best quote ever.
 
