@@ -5,4 +5,16 @@ help: ## Print this message
 
 .PHONY: presentation
 presentation: ## Start the presentation web server
-	@docker run --rm -p 1948:1948 -p 35729:35729 -v $(shell pwd)/Presentation:/slides webpronl/reveal-md:latest /slides --watch --theme moon --highlight-theme a11y-dark
+	@docker run --rm -p 1948:1948 -p 35729:35729 -v $(shell pwd)/Presentation:/slides webpronl/reveal-md:latest /slides --watch
+
+.PHONY: export-pdf
+export-pdf: clean ## Export presentation to pdf
+	@docker run -d -p 1948:1948 -v $(shell pwd)/Presentation:/slides --name reveal-md webpronl/reveal-md:latest /slides
+	@sleep 5s
+	@docker run --rm -t --net=host -v $(shell pwd)/Presentation/doc:/slides astefanutti/decktape reveal http://localhost:1948/slides.md slides.pdf
+	@make clean
+
+.PHONY: clean
+clean: ## Clean docker image
+	@docker stop reveal-md || true
+	@docker rm reveal-md || true
