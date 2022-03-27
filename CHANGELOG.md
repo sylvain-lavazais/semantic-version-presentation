@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.1.0...1.2.0) (2022-03-27)
+
+
+### Features
+
+* **pdf:** improve pdf format with speaker notes ([576b3aa](https://github.com/slavazais-dav/semantic-version-presentation/commit/576b3aa417f594804d50ba1b15ff756c82085efd))
+
 # [1.1.0](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.0.0...1.1.0) (2022-03-27)
 
 
