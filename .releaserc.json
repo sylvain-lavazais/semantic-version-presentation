@@ -4,7 +4,7 @@
   "plugins": [
     "@semantic-release/commit-analyzer",
     ["@semantic-release/exec", {
-      "prepareCmd": "make export-pdf"
+      "prepareCmd": "echo ${nextRelease.version} > version.txt"
     }],
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
