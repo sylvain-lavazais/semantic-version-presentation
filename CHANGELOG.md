@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.0.0...1.1.0) (2022-03-27)
+
+
+### Features
+
+* **semantic-release:** add version.txt to version management ([c1365b1](https://github.com/slavazais-dav/semantic-version-presentation/commit/c1365b114fb35cff41d7a4c336340aa5c7a11d9e))
+
 # 1.0.0 (2022-03-27)
 
 
