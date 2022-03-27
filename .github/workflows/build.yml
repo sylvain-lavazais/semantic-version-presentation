@@ -13,15 +13,9 @@ jobs:
     steps:
       - name: Checkout sources
         uses: actions/checkout@v2
-      - name: Deploy presentation docker
-        run: |
-          make presentation-expose
       - name: Generate PDF from presentation
         run: |
-          docker run --rm --net=host -t -v `pwd`/Presentation/doc:/slides -v ~:/home/user astefanutti/decktape reveal http://localhost:1948/slides.md slides.pdf
-      - name: Clean presentation docker
-        run: |
-          make clean
+          make export-pdf
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2
         with:

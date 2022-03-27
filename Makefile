@@ -10,16 +10,14 @@ presentation: ## Start the presentation web server
 .PHONY: export-pdf
 export-pdf: clean ## Export presentation to pdf
 	@docker run -d -p 1948:1948 -v $(shell pwd)/Presentation:/slides --name reveal-md webpronl/reveal-md:latest /slides
+	@mkdir generation_tmp && sudo chmod 777 generation_tmp
 	@sleep 5s
-	@docker run --rm -t --net=host -v $(shell pwd)/Presentation/doc:/slides astefanutti/decktape reveal http://localhost:1948/slides.md slides.pdf
+	@docker run --rm -t --net=host -v $(shell pwd)/generation_tmp:/slides astefanutti/decktape reveal http://localhost:1948/slides.md slides.pdf
+	@mv -f generation_tmp/slides.pdf Presentation/doc/slides.pdf
 	@make clean
-
-.PHONY: presentation-expose
-presentation-expose: clean ## Export presentation to pdf
-	@docker run -d -p 1948:1948 -v $(shell pwd)/Presentation:/slides --name reveal-md webpronl/reveal-md:latest /slides
-	@sleep 5s
 
 .PHONY: clean
 clean: ## Clean docker image
 	@docker stop reveal-md || true
 	@docker rm reveal-md || true
+	@rm -rf generation_tmp || true
