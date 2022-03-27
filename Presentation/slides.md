@@ -11,11 +11,14 @@ revealOptions:
 
 # Semantic Version
 
-Note: author : s. Lavazais
+Note: authors : 
+ - s. Lavazais
+ - d. Six
 
 sources:
 - https://en.wikipedia.org/wiki/Dependency_hell
 - https://semver.org/
+- https://github.com/semantic-release/semantic-release
 
 <!--h-->
 
@@ -190,7 +193,6 @@ bug fixes (backward compatible)
 
 Note: bug fixes should increment the patch version
 
-rule involved:
 - [rule #6](https://semver.org/#spec-item-6)
 
 <!--v-->
@@ -226,7 +228,6 @@ broken the backward compatibility of the application/lib
 
 this incrementation imply that the patch version is reset to 0
 
-rule involved:
 - [rule #7](https://semver.org/#spec-item-7)
 
 <!--v-->
@@ -261,7 +262,6 @@ Note: any breaking changes (that broke the backward compatibility) should increm
 
 this incrementation imply that the patch and the minor versions are reset to 0
 
-rule involved:
 - [rule #8](https://semver.org/#spec-item-8)
 
 <!--v-->
@@ -278,7 +278,6 @@ Note: the precedences rules define how versions are compared to each other
 the precedence must be calculated by separating the version into major, minor, patch 
 and pre-release identifiers in that order (Build metadata does not figure into precedence).
 
-rule involved:
 - [rule #11](https://semver.org/#spec-item-11)
 
 <!--v-->
@@ -294,7 +293,6 @@ with pre-release
 
 Note: pre-released version has lower precedence compared to normal version
 
-rule involved:
 - [rule #11](https://semver.org/#spec-item-11)
 
 <!--v-->
@@ -312,6 +310,60 @@ with pre-release
 Note: precedence of pre-released versions of same core version must determine by comparing each 
 dot separated identifier from left to right until a difference is found.
 
-rule involved:
 - [rule #11](https://semver.org/#spec-item-11)
 
+<!--h-->
+
+## Using semantic-release
+
+
+<!--v-->
+
+### config semantic-release
+
+```json[|2|3|4-11|6,9]
+{
+  "branches": ["main"],
+  "tagFormat": "${version}",
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/exec",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/git",
+    "@semantic-release/github"
+  ]
+}
+```
+
+<!--v-->
+
+### config semantic-release
+
+```json
+["@semantic-release/exec", {
+  "prepareCmd": "echo ${nextRelease.version} > version.txt"
+}]
+```
+```json
+["@semantic-release/git", {
+  "assets": ["CHANGELOG.md", "version.txt"],
+  "message": "chore(release): version ${nextRelease.version}"
+}]
+```
+
+<!--v-->
+
+
+<!--h-->
+
+## Thank you
+
+Authors: 
+#### s. Lavazais
+#### d. Six
+
+Sources:
+#### https://en.wikipedia.org/wiki/Dependency_hell
+#### https://semver.org/
+#### https://github.com/semantic-release/semantic-release
