@@ -14,6 +14,11 @@ export-pdf: clean ## Export presentation to pdf
 	@docker run --rm -t --net=host -v $(shell pwd)/Presentation/doc:/slides astefanutti/decktape reveal http://localhost:1948/slides.md slides.pdf
 	@make clean
 
+.PHONY: presentation-expose
+presentation-expose: clean ## Export presentation to pdf
+	@docker run -d -p 1948:1948 -v $(shell pwd)/Presentation:/slides --name reveal-md webpronl/reveal-md:latest /slides
+	@sleep 5s
+
 .PHONY: clean
 clean: ## Clean docker image
 	@docker stop reveal-md || true
