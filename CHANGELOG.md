@@ -1,3 +1,11 @@
+# [1.3.0](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.2.0...1.3.0) (2022-03-27)
+
+
+### Features
+
+* **presentation:** add of semantic-release demo ([a57f02c](https://github.com/slavazais-dav/semantic-version-presentation/commit/a57f02c8976e8090243810d155c567e1f3cb05d0))
+* **presentation:** add of semantic-release demo pictures ([7fb4534](https://github.com/slavazais-dav/semantic-version-presentation/commit/7fb45345c05eb757ab9d3658dcc061aab402ef28))
+
 # [1.2.0](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.1.0...1.2.0) (2022-03-27)
 
 
