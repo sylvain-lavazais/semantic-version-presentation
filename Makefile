@@ -7,14 +7,20 @@ help: ## Print this message
 presentation: ## Start the presentation web server
 	@docker run --rm -p 1948:1948 -p 35729:35729 -v $(shell pwd)/Presentation:/slides webpronl/reveal-md:latest /slides --watch
 
+.PHONY: presentation-w-notes
+presentation-w-notes: ## Start the presentation web server
+	@docker run --rm -p 1948:1948 -p 35729:35729 -v $(shell pwd)/Presentation:/slides webpronl/reveal-md:latest /slides --scripts print-format.js --watch
+
 .PHONY: export-pdf
 export-pdf: clean ## Export presentation to pdf
+	@mv Presentation/print-options.json Presentation/reveal.json
 	@docker run -d -p 1948:1948 -v $(shell pwd)/Presentation:/slides --name reveal-md webpronl/reveal-md:latest /slides
 	@mkdir generation_tmp && sudo chmod 777 generation_tmp
 	@sleep 5s
 	@docker run --rm -t --net=host -v $(shell pwd)/generation_tmp:/slides astefanutti/decktape reveal http://localhost:1948/slides.md slides.pdf
 	@mv -f generation_tmp/slides.pdf Presentation/doc/slides.pdf
 	@make clean
+	@mv Presentation/reveal.json Presentation/print-options.json
 
 .PHONY: clean
 clean: ## Clean docker image
