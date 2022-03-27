@@ -30,9 +30,7 @@ version 1.2.3
 ```
 
 Note: Semantic version is the set of rules dictating how version numbers of an API are assigned 
-and incremented.
-
-Based on but not limited to common practices of closed and open source software development.
+and incremented. Based on but not limited to common practices of closed and open source software development.
 
 Consider a version like `X.Y.Z` where `X` is `MAJOR` number, `Y` is `MINOR` number 
 and `Z` is `PATCH` number.
@@ -73,11 +71,8 @@ Note: here are the set of rules defines in [specifications](https://semver.org/#
 
 only after the release of version 1.0.0
 
-Note: any application/lib must declare a public API (it could be simple documentation).
+Note: any application/lib must declare a public API (it could be simple documentation). It must be only define after the first major version.
 
-it must be only define after the first major version.
-
-rules involved:
 - [rule #1](https://semver.org/#spec-item-1)
 - [rule #5](https://semver.org/#spec-item-5)
 
@@ -97,7 +92,6 @@ Note: a normal version must be formatted with 3 non-negative integer separated b
 
 each integer represent a different type of modification of the application/lib imply.
 
-rule involved:
 - [rule #2](https://semver.org/#spec-item-2)
 
 <!--v-->
@@ -114,7 +108,6 @@ init dev start with `"v0"`
 Note: initial development start at version 0.x.x, the increment of the version a this state can occur 
 any time and the version is not stable.
 
-rule involved:
 - [rule #4](https://semver.org/#spec-item-4)
 
 <!--v-->
@@ -134,7 +127,6 @@ Note: pre-released version can be defined by adding identifiers after the patch 
 
 then each identifier must be separated by a dot.
 
-rule involved:
 - [rule #9](https://semver.org/#spec-item-9)
 
 <!--v-->
@@ -151,7 +143,6 @@ can add `"+"` and other identifiers separated by `"."`
 
 Note: versions for build metadata should be separated from the rest of the version by adding a plus sign
 
-rule involved:
 - [rule #10](https://semver.org/#spec-item-10)
 
 <!--v-->
@@ -167,7 +158,6 @@ any modification after first release is a new version
 
 Note: any modification after the first release must imply a modification of the version
 
-rule involved:
 - [rule #3](https://semver.org/#spec-item-3)
 
 <!--v-->
