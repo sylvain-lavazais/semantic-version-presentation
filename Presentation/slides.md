@@ -316,6 +316,29 @@ dot separated identifier from left to right until a difference is found.
 
 ## Using semantic-release
 
+📦🚀 semantic-release
+
+```text
+verb(scope): message
+
+notes
+```
+```text
+fix(security): fix security check
+```
+```text
+feat(security): add security standard
+```
+```text
+feat(security): new security standard
+
+BREAKING CHANGES: don't support old security standard
+```
+
+Note: Semantic Versioning can be easily implemented to any project by using tools like semantic-release
+
+semantic-release parse commit messages to build a version number. by default this tool will build the first
+release if no tag of version exist (1.0.0)
 
 <!--v-->
 
@@ -354,6 +377,20 @@ dot separated identifier from left to right until a difference is found.
 
 <!--v-->
 
+<!-- .slide: data-auto-animate -->
+### run semantic-release
+
+```shell
+npx semantic-release
+```
+
+<!--v-->
+
+<!-- .slide: data-auto-animate -->
+### run semantic-release
+
+![](img/semantic-release_sys-out.png)
+![](img/semantic-release_result-out.png)
 
 <!--h-->
 
@@ -367,3 +404,4 @@ Sources:
 #### https://en.wikipedia.org/wiki/Dependency_hell
 #### https://semver.org/
 #### https://github.com/semantic-release/semantic-release
+#### [https://github.com/angular/master/CONTRIBUTING.md](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-format)
