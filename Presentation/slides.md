@@ -341,7 +341,7 @@ semantic-release parse commit messages to build a version number. by default thi
 release if no tag of version exist (1.0.0)
 
 <!--v-->
-
+<!-- .slide: data-auto-animate -->
 ### config semantic-release
 
 ```json[|2|3|4-11|6,9]
@@ -361,6 +361,7 @@ release if no tag of version exist (1.0.0)
 
 <!--v-->
 
+<!-- .slide: data-auto-animate -->
 ### config semantic-release
 
 ```json
