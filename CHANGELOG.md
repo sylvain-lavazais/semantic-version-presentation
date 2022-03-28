@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.3.0...1.3.1) (2022-03-28)
+
+
+### Bug Fixes
+
+* **presentation:** fix slide auto animate ([b539458](https://github.com/slavazais-dav/semantic-version-presentation/commit/b53945899f781fc7f73ce99b2237a9a70bccf7f8))
+
 # [1.3.0](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.2.0...1.3.0) (2022-03-27)
 
 
