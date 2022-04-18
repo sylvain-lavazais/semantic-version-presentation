@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.3.1...1.3.2) (2022-04-18)
+
+
+### Bug Fixes
+
+* **local dev:** removing useless local packages ([30ce367](https://github.com/slavazais-dav/semantic-version-presentation/commit/30ce367d6c65a45441b86522ec63f9515d1d8e64))
+
 ## [1.3.1](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.3.0...1.3.1) (2022-03-28)
 
 
