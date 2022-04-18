@@ -84,4 +84,6 @@ fabric.properties
 
 # NodeJs
 node_modules/
+package-lock.json
+package.json
 
