@@ -91,7 +91,7 @@ Note: any application/lib must declare a public API (it could be simple document
 ╚═════ Major
 ```
 
-Note: a normal version must be formatted with 3 non-negative integer separated by dot.
+Note: a normal version must be formatted with 3 non-negative integer separated by dot. (not lead by `v`)
 
 each integer represent a different type of modification of the application/lib imply.
 
@@ -102,13 +102,13 @@ each integer represent a different type of modification of the application/lib i
 <!-- .slide: data-auto-animate -->
 ### pre-release rules
 
-init dev start with `"v0"`
+init dev start with version `"0"`
 
 ```text
 0.x.x
 ```
 
-Note: initial development start at version 0.x.x, the increment of the version a this state can occur 
+Note: initial development start at version 0.x.x, the increment of the version a state can occur 
 any time and the version is not stable.
 
 - [rule #4](https://semver.org/#spec-item-4)
@@ -118,7 +118,7 @@ any time and the version is not stable.
 <!-- .slide: data-auto-animate -->
 ### pre-release rules
 
-can add `"-"` and other identifiers separated by `"."`
+add `"-"` and other identifiers separated by `"."`
 
 ```text
 1.1.2-alpha.1
@@ -359,6 +359,13 @@ release if no tag of version exist (1.0.0)
 }
 ```
 
+Note: Semantic Release (SR) use a simple file to run (`releaserc`). here an example of settings.
+
+setting `branches` are the release branches. setting `tagFormat` is the format of tag (when a release occur). `plugins` 
+allow SR to manipulate different aspect on the release mechanism
+
+we're gonna tweak `exec` and `git` to allow us to add more parameters to our releases.
+
 <!--v-->
 
 <!-- .slide: data-auto-animate -->
@@ -376,6 +383,9 @@ release if no tag of version exist (1.0.0)
 }]
 ```
 
+Note: on `exec`, we describe what we do just before the release.
+
+on `git`, we describe what we commit on release, and the commit message
 <!--v-->
 
 <!-- .slide: data-auto-animate -->
@@ -392,6 +402,48 @@ npx semantic-release
 
 ![](img/semantic-release_sys-out.png)
 ![](img/semantic-release_result-out.png)
+
+<!--v-->
+
+<!-- .slide: data-auto-animate -->
+## going further
+
+plugins order matter
+
+```json
+{
+  "branches": ["main"],
+  "tagFormat": "${version}",
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/exec",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/git",  //will commit without changelog
+    "@semantic-release/changelog",
+    "@semantic-release/github"
+  ]
+}
+```
+
+<!--v-->
+
+<!-- .slide: data-auto-animate -->
+## going further
+
+release steps mechanism
+
+- `verifyConditions`
+- `analyzeCommits`
+- `verifyRelease`
+- `generateNotes`
+- `prepare`
+- `publish`
+- `addChannel`
+- `success`
+- `fail`
+
+Note: inside the whole release mechanism plugins, SR allows to manipulate different steps to execute everything 
+withing the release.
 
 <!--h-->
 
