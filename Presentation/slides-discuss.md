@@ -28,9 +28,83 @@ Note: Discussion autour d'une librairie d'étiquette de bouteille vente de vin :
 - I1: a besoin de communiquer sa lib au public, a besoin de la diffuser au consommateur
 - I1: demande l'avis de I2 concernant sa lib
 - I2: argumenter sur la maintenabilité, la facon de gérer les versions et l'exposition
+- I2: proposer l'approche Semantic version
 
 <!--h-->
 
-## Démarche Semantic Version
+## La démarche Semantic Version
+
+C'est quoi ?
+
+
+Note: 
+
+- I2: c'est la normalisation de la gestion des versions
+- I1: Ouh lala, est-ce que c'est pas une grosse usine à gaz ton truc ?
+- I2: non, tu vas voir c'est hyper simple et surtout, tu ne te prendras plus la tête avec tes prochaines releases
+- I1: Mouais... j'y crois pas trop ton truc, moi je crois que tu va me faire perdre mon temps avec tes conneries là
+- I2: non non t'inquiète paupiette, il y a juste quelques petites règles à suivre, mais tu va voir tu va adorer
+
+<!--v-->
+
+## 1ere regle : La plus simple de toute
+
+```xml
+<version>v0.4.Finale</version>
+```
+
+```text
+x.y.z
+^ ^ ^
+║ ║ ╚═ Réparatation (patch)
+║ ╚═══ Fonctionnalités (minor)
+╚═════ Gros Truc (major)
+```
+
+Note:
+
+- I2: Tu vois normalement les versions, on ne les gère pas comme dans ton bazar
+- I1: Hey, mais c'est de mon code que tu parles là ?!
+- I2: premiere règle on ne met de lettres dans les versions
+- I1: Bah, j'ai déjà vu plein de paquet avec le v devant
+- I2: Ouais, mais ce n'est pas semantic version "compliant" pour ces cas-là, tu peux mettre ce que tu ce que tu veux sur 
+tes tags, la version elle, elle ne comporte que des chiffres non-négatif.
+- I2: et chaque chiffres veut signifie quelque chose. 
+
+<!--v-->
+<!-- .slide: data-auto-animate -->
+## 2eme regle : les Pre-releases
+
+```xml
+<version>0.4.0</version>
+```
+
+Note:
+
+- I1: Ok le v effectivement, tu le mètres a la trappe, jm'en tape
+- I1: Et le Final, ok, tu as mis un zero, si ça te fait plaisir...
+- I2: Ok, mais c'est pas finit !
+- I2: Là ta release, elle n'est pas vraiment release, ce n'est pas une version que tu peux donner aux autres
+- I1: Oh bah si, pourquoi je peut pas ?
+- I2: Bah normalement, il faut que ta première release commence par la version 1.0.0.
+- I2: et c'est uniquement à partir de la version 1.0.0 que tu dois la communiquer
+- I2: avant la version 1.0.0, tu peux faire ce que tu veux avec, tu ne dois pas de la publier
+- I2: 0.4.0, ça veut dire qu'elle n'est pas stable
+
+<!--v-->
+
+<!-- .slide: data-auto-animate -->
+## 2eme regle : les Pre-releases
+
+```xml
+<version>0.4.0-alpha</version>
+```
+
+Note:
+
+- I2: tu vois par exemple, tu pourrais lui ajouter un identifiant de pre-release, qui permet d'identifier son stade de
+développement.
+- I1: ouais, mais là, ça ne me va pas là, ma lib est bonne pour être communiquée
+- I2: ok ok, alors dans ce cas, elle doit partir avec une vraie release
 
 
