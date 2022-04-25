@@ -25,7 +25,7 @@ sources:
 ## Summary
 
 ```text
-version 1.2.3
+version x.y.z
         ^ ^ ^
         ║ ║ ╚═ Patch : backward compatible bug fixes
         ║ ╚═══ Minor : features backward compatible manner
