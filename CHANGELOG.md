@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.3.2...1.4.0) (2022-04-25)
+
+
+### Features
+
+* **presentation:** add going further section ([8e5ac48](https://github.com/slavazais-dav/semantic-version-presentation/commit/8e5ac4886ff407a17f64203bbe8b29efbf67bb58))
+
 ## [1.3.2](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.3.1...1.3.2) (2022-04-18)
 
 
