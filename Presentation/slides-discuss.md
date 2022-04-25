@@ -179,3 +179,147 @@ Note:
 - I2: ouais, ouais, t'inquiète, je t'explique juste les règles comme ça, mais j'ai un petit outil qui fait le taff pour 
 toi
 
+<!--h-->
+
+## Semantic Release : c'est de l'or en barre
+
+📦🚀 semantic-release
+
+```text
+verb(scope): message
+
+notes
+```
+```text
+fix(security): fix security check
+```
+```text
+feat(security): add security standard
+```
+```text
+feat(security): new security standard
+
+BREAKING CHANGES: don't support old security standard
+```
+
+Note:
+
+I2: explique le fonctionnement de base
+I1: demande la liste au pere noel
+I2: argument et explique que tout est deja fait
+
+<!--v-->
+<!-- .slide: data-auto-animate -->
+### Comment on le configure
+
+```json[|2|3|4-11|6,9]
+{
+  "branches": ["main"],
+  "tagFormat": "${version}",
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/exec",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/git",
+    "@semantic-release/github"
+  ]
+}
+```
+
+Note: 
+
+I2: explique les parametres
+
+<!--v-->
+
+<!-- .slide: data-auto-animate -->
+### Pour bien commencer
+
+```json
+["@semantic-release/exec", {
+  "prepareCmd": "mvn -q versions:set -DnewVersion=${nextRelease.version}"
+}]
+```
+```json
+["@semantic-release/git", {
+  "assets": ["CHANGELOG.md", "pom.xml"],
+  "message": "chore(release): version ${nextRelease.version}"
+}]
+```
+
+Note: 
+
+I2: rajoute les petits tweak sympa pour monsieur I1
+
+<!--v-->
+
+<!-- .slide: data-auto-animate -->
+### testons tout ca
+
+```shell
+npx semantic-release
+```
+demo !
+
+Note: 
+
+I2: preciser rapidement les petites dependence
+
+<!--v-->
+
+<!-- .slide: data-auto-animate -->
+## Pour après
+
+l'ordre des plugins est important
+
+```json
+{
+  "branches": ["main"],
+  "tagFormat": "${version}",
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/exec",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/git",  //will commit without changelog
+    "@semantic-release/changelog",
+    "@semantic-release/github"
+  ]
+}
+```
+
+<!--v-->
+
+<!-- .slide: data-auto-animate -->
+## Pour après
+
+les différentes étape de release
+
+- `verifyConditions`
+- `analyzeCommits`
+- `verifyRelease`
+- `generateNotes`
+- `prepare`
+- `publish`
+- `addChannel`
+- `success`
+- `fail`
+
+Note: 
+
+
+<!--h-->
+
+## Merci
+
+Authors:
+#### s. Lavazais
+#### d. Six
+
+Sources:
+#### https://en.wikipedia.org/wiki/Dependency_hell
+#### https://semver.org/
+#### https://github.com/semantic-release/semantic-release
+#### [https://github.com/angular/master/CONTRIBUTING.md](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-format)
+
+
