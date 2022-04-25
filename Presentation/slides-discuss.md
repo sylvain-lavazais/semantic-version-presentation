@@ -107,4 +107,75 @@ développement.
 - I1: ouais, mais là, ça ne me va pas là, ma lib est bonne pour être communiquée
 - I2: ok ok, alors dans ce cas, elle doit partir avec une vraie release
 
+<!--v-->
+
+## 3eme regle : La release, la vraie...
+
+```xml
+<version>1.0.0</version>
+```
+
+Note:
+
+- I2: voilà, donc là si elle part, elle part en version 1.0.0
+- I1: ah bah là du coup, là ça me va mieux
+- I2: tu m'étonnes, c'est plus propre
+- I2: mais du coup, il faut que je t'explique comment ça fonctionne par la suite
+
+<!--v-->
+
+<!-- .slide: data-auto-animate -->
+## 4eme regle : les versions suivantes
+
+```xml
+<version>1.0.0</version>
+```
+
+Note:
+
+- I2: si demain tu as un correctif retro-compatible, bah tu incrémente la version "patch"
+
+<!--v-->
+
+<!-- .slide: data-auto-animate -->
+## 4eme regle : les versions suivantes
+
+```xml
+<version>1.0.1</version>
+```
+
+Note:
+
+- I2: et si demain tu as une nouvelle fonctionnalité retro-compatible, bah tu incrémente la version "mineur"
+- I2: et surtout, tu n'oublies pas de remettre à zéro la version "patch"
+
+<!--v-->
+
+<!-- .slide: data-auto-animate -->
+## 4eme regle : les versions suivantes
+
+```xml
+<version>1.1.0</version>
+```
+
+Note:
+
+- I2: et pareille pour n'importe quel autre modification non retro-compatible, tu incrémente la version "majeur"
+- I2: et surtout, tu n'oublies pas de remettre à zéro la version "patch" et la version "mineur"
+
+<!--v-->
+
+<!-- .slide: data-auto-animate -->
+## 4eme regle : les versions suivantes
+
+```xml
+<version>2.0.0</version>
+```
+
+Note:
+
+- I1: ouais, bon la dit donc, tu m'avais vendu du rêve, c'est quand même pas ouf comme système
+- I1: surtout que, je dois me taper tous les poms comme ca...
+- I2: ouais, ouais, t'inquiète, je t'explique juste les règles comme ça, mais j'ai un petit outil qui fait le taff pour 
+toi
 
