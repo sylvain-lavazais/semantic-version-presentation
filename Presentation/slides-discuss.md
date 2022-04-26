@@ -68,7 +68,7 @@ Note:
 - I2: premiere règle on ne met de lettres dans les versions
 - I1: Bah, j'ai déjà vu plein de paquet avec le v devant
 - I2: Ouais, mais ce n'est pas semantic version "compliant" pour ces cas-là, tu peux mettre ce que tu ce que tu veux sur 
-tes tags, la version elle, elle ne comporte que des chiffres non-négatif.
+tes tags, la version, elle, elle ne comporte que des chiffres non-négatif.
 - I2: et chaque chiffres veut signifie quelque chose. 
 
 <!--v-->
@@ -81,7 +81,7 @@ tes tags, la version elle, elle ne comporte que des chiffres non-négatif.
 
 Note:
 
-- I1: Ok le v effectivement, tu le mètres a la trappe, jm'en tape
+- I1: Ok le v effectivement, tu le mètres à la trappe, jm'en tape
 - I1: Et le Final, ok, tu as mis un zero, si ça te fait plaisir...
 - I2: Ok, mais c'est pas finit !
 - I2: Là ta release, elle n'est pas vraiment release, ce n'est pas une version que tu peux donner aux autres
@@ -204,9 +204,11 @@ BREAKING CHANGES: don't support old security standard
 
 Note:
 
-I2: explique le fonctionnement de base
-I1: demande la liste au pere noel
-I2: argument et explique que tout est deja fait
+- I2: le principe de base de cet outil, c'est d'analyser tes commits et de créer une release en fonction des messages
+- I1: ah c'est pas mal ça, donc je pourrais gérer toutes mes releases avec ce truc ?
+- I2: en principe, oui, tu pourrais te concentrer sur ton dev tout en conservant les règles du semVer.
+- I1: ah mais attend, est-ce qu'ont pourrais y ajouter une release note et une note de changelog en passant
+- I2: bah en faite, c'est déjà fait pour être franc
 
 <!--v-->
 <!-- .slide: data-auto-animate -->
@@ -215,7 +217,7 @@ I2: argument et explique que tout est deja fait
 ```json[|2|3|4-11|6,9]
 {
   "branches": ["main"],
-  "tagFormat": "${version}",
+  "tagFormat": "v${version}",
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/exec",
@@ -229,7 +231,12 @@ I2: argument et explique que tout est deja fait
 
 Note: 
 
-I2: explique les parametres
+- I2: on y ajoute ta ou tes branches de release
+- I2: le format des tags que souhaite (tu peux y ajouter ton `v` si tu veux)
+- I2: et pour finir, les different fonctionnalités que tu veux lors de ta releases (details)
+- I1: mouais... ok, c'est bien, mais comment je peux y ajouter les fichiers que je souhaite lors de mes release ?
+- I1: genre, comment je fais pour eviler de me taper tous mes poms a la chaine pour chaque release ?
+- I2: attend, ce n'est pas fini
 
 <!--v-->
 
@@ -250,7 +257,8 @@ I2: explique les parametres
 
 Note: 
 
-I2: rajoute les petits tweak sympa pour monsieur I1
+- I2: pour tes poms, il suffit de rajouter la petite commande qui va bien
+- I2: et pour tes fichiers, on les ajoute avec un message de commit
 
 <!--v-->
 
@@ -269,7 +277,7 @@ I2: preciser rapidement les petites dependence
 <!--v-->
 
 <!-- .slide: data-auto-animate -->
-## Pour après
+### Pour après
 
 l'ordre des plugins est important
 
@@ -281,17 +289,23 @@ l'ordre des plugins est important
     "@semantic-release/commit-analyzer",
     "@semantic-release/exec",
     "@semantic-release/release-notes-generator",
-    "@semantic-release/git",  //will commit without changelog
+    "@semantic-release/git",
     "@semantic-release/changelog",
     "@semantic-release/github"
   ]
 }
 ```
 
+pas de changelog, pas de chocolat 😢
+
+Note:
+
+- I2: parcontre, fait bien gaffe a ne pas te planter, ça parait tout con, mais certains s'y sont casser les dents
+
 <!--v-->
 
 <!-- .slide: data-auto-animate -->
-## Pour après
+### Pour après
 
 les différentes étape de release
 
@@ -307,6 +321,7 @@ les différentes étape de release
 
 Note: 
 
+- I2: après, il est possible d'y ajouter d'autres étapes dans semantic release, il tout prevu
 
 <!--h-->
 
