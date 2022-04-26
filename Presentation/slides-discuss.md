@@ -40,10 +40,10 @@ C'est quoi ?
 Note: 
 
 - I2: c'est la normalisation de la gestion des versions
-- I1: Ouh lala, est-ce que c'est pas une grosse usine à gaz ton truc ?
+- I1: Ouh lala, est-ce que ce n'est pas une grosse usine à gaz ton truc ?
 - I2: non, tu vas voir c'est hyper simple et surtout, tu ne te prendras plus la tête avec tes prochaines releases
 - I1: Mouais... j'y crois pas trop ton truc, moi je crois que tu va me faire perdre mon temps avec tes conneries là
-- I2: non non t'inquiète paupiette, il y a juste quelques petites règles à suivre, mais tu va voir tu va adorer
+- I2: non... non t'inquiète paupiette, il y a juste quelques petites règles à suivre, mais tu va voir tu va adorer
 
 <!--v-->
 
@@ -69,7 +69,7 @@ Note:
 - I1: Bah, j'ai déjà vu plein de paquet avec le v devant
 - I2: Ouais, mais ce n'est pas semantic version "compliant" pour ces cas-là, tu peux mettre ce que tu ce que tu veux sur 
 tes tags, la version, elle, elle ne comporte que des chiffres non-négatif.
-- I2: et chaque chiffres veut signifie quelque chose. 
+- I2: et chaque chiffre veut signifie quelque chose. 
 
 <!--v-->
 <!-- .slide: data-auto-animate -->
@@ -105,7 +105,7 @@ Note:
 - I2: tu vois par exemple, tu pourrais lui ajouter un identifiant de pre-release, qui permet d'identifier son stade de
 développement.
 - I1: ouais, mais là, ça ne me va pas là, ma lib est bonne pour être communiquée
-- I2: ok ok, alors dans ce cas, elle doit partir avec une vraie release
+- I2: ok... ok, alors dans ce cas, elle doit partir avec une vraie release
 
 <!--v-->
 
@@ -205,9 +205,9 @@ BREAKING CHANGES: don't support old security standard
 Note:
 
 - I2: le principe de base de cet outil, c'est d'analyser tes commits et de créer une release en fonction des messages
-- I1: ah c'est pas mal ça, donc je pourrais gérer toutes mes releases avec ce truc ?
+- I1: ah, c'est pas mal ça, donc je pourrais gérer toutes mes releases avec ce truc ?
 - I2: en principe, oui, tu pourrais te concentrer sur ton dev tout en conservant les règles du semVer.
-- I1: ah mais attend, est-ce qu'ont pourrais y ajouter une release note et une note de changelog en passant
+- I1: ah, mais attend, est-ce qu'on pourrait y ajouter une release note et une note de changelog en passant
 - I2: bah en faite, c'est déjà fait pour être franc
 
 <!--v-->
@@ -272,7 +272,15 @@ demo !
 
 Note: 
 
-I2: preciser rapidement les petites dependence
+- I2: (fait la demo)
+- I1: ton outil semble magique, mais si je dois le lancer à chaque fois à la main, je sens que cela va me gaver
+- I2: mais non là, c'est pour tester en locale mais on intègre tout cela dans Github - Actions et il te fera le café,
+  regarde mon beau repo ...(presenter la CI GH et l'action en live)
+- I1: Ok donc si j’ai bien compris, j’ajoute 10 lignes dans ma Github Actions et c'est marre
+- I1: Je code et commit avec des fix feat et Breaking Changes et tout sera fait tout seul, c’est bien cela ?
+- I2: T’as tout compris mon bichon
+- I2: et meme maintenant, je peux meme te montrer des petites astuces pour pas se gourer
+
 
 <!--v-->
 
@@ -300,14 +308,14 @@ pas de changelog, pas de chocolat 😢
 
 Note:
 
-- I2: parcontre, fait bien gaffe a ne pas te planter, ça parait tout con, mais certains s'y sont casser les dents
+- I2: par contre, fait bien gaffe à ne pas te planter, ça parait tout con, mais certains s'y sont cassé les dents
 
 <!--v-->
 
 <!-- .slide: data-auto-animate -->
 ### Pour après
 
-les différentes étape de release
+Les différentes étapes de release
 
 - `verifyConditions`
 - `analyzeCommits`
@@ -321,7 +329,8 @@ les différentes étape de release
 
 Note: 
 
-- I2: après, il est possible d'y ajouter d'autres étapes dans semantic release, il tout prevu
+- I2: après, il est possible d'y ajouter d'autres étapes dans semantic release, ils ont tout prévu...
+- I1: Ok ben pour moi, c'est clair, (se tourne vers l’assistance) et vous ? avez-vous des questions ?
 
 <!--h-->
 

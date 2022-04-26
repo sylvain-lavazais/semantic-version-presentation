@@ -399,7 +399,6 @@ npx semantic-release
 
 <!-- .slide: data-auto-animate -->
 ### run semantic-release
-
 ![](img/semantic-release_sys-out.png)
 ![](img/semantic-release_result-out.png)
 
@@ -431,16 +430,9 @@ plugins order matter
 ## going further
 
 release steps mechanism
+`verifyConditions` / `analyzeCommits` / `verifyRelease` / `generateNotes`
 
-- `verifyConditions`
-- `analyzeCommits`
-- `verifyRelease`
-- `generateNotes`
-- `prepare`
-- `publish`
-- `addChannel`
-- `success`
-- `fail`
+`prepare` / `publish` / `addChannel` / `success` / `fail`
 
 Note: inside the whole release mechanism plugins, SR allows to manipulate different steps to execute everything 
 withing the release.
