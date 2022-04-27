@@ -1,3 +1,20 @@
+# [1.5.0](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.4.0...1.5.0) (2022-04-27)
+
+
+### Bug Fixes
+
+* **presentation:** fix first slide ([1a95e76](https://github.com/slavazais-dav/semantic-version-presentation/commit/1a95e76349b2ec674961c61551bdbac911e9a779))
+
+
+### Features
+
+* **presentation:** add final and thanks ([6f6bb85](https://github.com/slavazais-dav/semantic-version-presentation/commit/6f6bb85cd7878fbe7a1b386a76ee645008653a99))
+* **presentation:** add first release and precedence rules ([f24b210](https://github.com/slavazais-dav/semantic-version-presentation/commit/f24b210c28a53abc3b889a22fc6a803314ee75da))
+* **presentation:** add new form of presentation (arround a talk) ([fa2a2b3](https://github.com/slavazais-dav/semantic-version-presentation/commit/fa2a2b386eee7b9180ec23c1fb0d4308f252ab42))
+* **presentation:** add pre-releases ([a439d4c](https://github.com/slavazais-dav/semantic-version-presentation/commit/a439d4cd3c0430aaa04ffbd976df9544b8bc5576))
+* **presentation:** completing presentation ([1bfa6a4](https://github.com/slavazais-dav/semantic-version-presentation/commit/1bfa6a48292bb4115385fa7b22b4354eea3269d3))
+* **presentation:** completing presentation ([11b4634](https://github.com/slavazais-dav/semantic-version-presentation/commit/11b4634cfb70d941b39ae569ea7d06ddd8148884))
+
 # [1.4.0](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.3.2...1.4.0) (2022-04-25)
 
 
