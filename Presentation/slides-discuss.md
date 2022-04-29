@@ -336,14 +336,8 @@ Note:
 
 ## Merci
 
+<img src="img/qr-code-feedback-zen.jpeg" alt="drawing" width="200"/>
+
 Authors:
 #### s. Lavazais
 #### d. Six
-
-Sources:
-#### https://en.wikipedia.org/wiki/Dependency_hell
-#### https://semver.org/
-#### https://github.com/semantic-release/semantic-release
-#### [https://github.com/angular/master/CONTRIBUTING.md](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-format)
-
-
