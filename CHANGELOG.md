@@ -1,3 +1,11 @@
+# [1.6.0](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.5.0...1.6.0) (2022-04-29)
+
+
+### Features
+
+* **discuss:** add blank slide at beginning ([838e590](https://github.com/slavazais-dav/semantic-version-presentation/commit/838e590b8ac23351dbdfe7204f675b4cfcb07333))
+* **discuss:** add qr code at the end ([b50c12a](https://github.com/slavazais-dav/semantic-version-presentation/commit/b50c12a98b2434ca647d15170aa07d2ebd4f5041))
+
 # [1.5.0](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.4.0...1.5.0) (2022-04-27)
 
 
