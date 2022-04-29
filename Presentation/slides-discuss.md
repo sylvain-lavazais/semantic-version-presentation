@@ -9,6 +9,8 @@ revealOptions:
   auto-animate: true
 ---
 
+<!--h-->
+
 ## Mon magasin de Vin
 
 ```xml[|5]
