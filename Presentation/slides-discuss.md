@@ -338,8 +338,8 @@ Note:
 
 ## Merci
 
-<img src="img/qr-code-feedback-zen.jpeg" alt="drawing" width="200"/>
+<img src="img/qr-code-feedback-zen.jpeg" alt="drawing" width="300"/>
 
-Authors:
+Auteurs:
 #### s. Lavazais
 #### d. Six
