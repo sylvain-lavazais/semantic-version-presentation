@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.6.0...1.6.1) (2022-04-29)
+
+
+### Bug Fixes
+
+* **discuss:** resize qr code ([ff40fdd](https://github.com/slavazais-dav/semantic-version-presentation/commit/ff40fdd236754142a9f34f58f8f35ec8c8c88279))
+
 # [1.6.0](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.5.0...1.6.0) (2022-04-29)
 
 
