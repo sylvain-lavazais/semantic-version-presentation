@@ -338,7 +338,7 @@ Note:
 
 ## Merci
 
-<img src="img/qr-code-feedback-zen.jpeg" alt="drawing" width="300"/>
+<img src="img/Slack-week-4-QRCode.png" alt="drawing" width="300"/>
 
 Auteurs:
 #### s. Lavazais
