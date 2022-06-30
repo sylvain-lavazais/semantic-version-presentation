@@ -1,3 +1,15 @@
+# [1.7.0](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.6.1...1.7.0) (2022-06-30)
+
+
+### Bug Fixes
+
+* **presentation:** fix highlight theme usage ([193923f](https://github.com/slavazais-dav/semantic-version-presentation/commit/193923f6e7b87381d4e0634a12b83a459c681b79))
+
+
+### Features
+
+* **presentation:** add Decathlon slack week [#4](https://github.com/slavazais-dav/semantic-version-presentation/issues/4) QrCode ([6944bea](https://github.com/slavazais-dav/semantic-version-presentation/commit/6944beabd472ab2bfc8a7c51c5d7d5946cad747c))
+
 ## [1.6.1](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.6.0...1.6.1) (2022-04-29)
 
 
