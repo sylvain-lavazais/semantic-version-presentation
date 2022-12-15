@@ -9,6 +9,14 @@ revealOptions:
   auto-animate: true
 ---
 
+Note:
+
+- interlocuteur 1 : arrive avec sa lib de vin
+- interlocuteur 2 : explique la demarche semantic version
+
+ - I1: Salut I2, comment tu va ? dis donc, je voudrais te presenter un truc sur lequel je bosse
+ - I2: Ouais, ca va bien, bah ecoute montre moi ca.
+
 <!--h-->
 
 ## Mon magasin de Vin
@@ -23,9 +31,6 @@ revealOptions:
 ```
 
 Note: Discussion autour d'une librairie d'étiquette de bouteille vente de vin :
-
-- interlocuteur 1 : arrive avec sa lib de vin
-- interlocuteur 2 : explique la demarche semantic version
 
 - I1: a besoin de communiquer sa lib au public, a besoin de la diffuser au consommateur
 - I1: demande l'avis de I2 concernant sa lib
