@@ -1,3 +1,11 @@
+# [1.8.0](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.7.0...1.8.0) (2022-12-18)
+
+
+### Features
+
+* **discuss:** add more discussion details ([51226e4](https://github.com/slavazais-dav/semantic-version-presentation/commit/51226e488a58dd19753c6d3beb6eab080caf7b9b))
+* **presentation:** add discuss at beginning ([940dd88](https://github.com/slavazais-dav/semantic-version-presentation/commit/940dd88abd2f5102d14e3b09a91ac5326826d054))
+
 # [1.7.0](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.6.1...1.7.0) (2022-06-30)
 
 
