@@ -252,12 +252,17 @@ Note:
 
 ```json
 ["@semantic-release/exec", {
-  "prepareCmd": "mvn -q versions:set -DnewVersion=${nextRelease.version}"
+  "prepareCmd": "VERSION=${nextRelease.version} make exec-release"
 }]
+```
+```makefile
+exec-release: ## Execution of a new release
+    ./mvnw -q versions:set -DnewVersion=${VERSION}
+    sed -Ei 's/version:.*/version: ${VERSION}/g' openapi.yaml
 ```
 ```json
 ["@semantic-release/git", {
-  "assets": ["CHANGELOG.md", "pom.xml"],
+  "assets": ["CHANGELOG.md", "pom.xml", "swagger.json"],
   "message": "chore(release): version ${nextRelease.version}"
 }]
 ```
@@ -345,7 +350,7 @@ https://github.com/semantic-release/semantic-release/blob/master/docs/developer-
 
 ## Merci
 
-<img src="img/Slack-week-4-QRCode.png" alt="drawing" width="300"/>
+<img src="img/feedback-qr-code.png" alt="drawing" width="300"/>
 
 Auteurs:
 #### s. Lavazais

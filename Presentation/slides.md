@@ -373,12 +373,17 @@ we're gonna tweak `exec` and `git` to allow us to add more parameters to our rel
 
 ```json
 ["@semantic-release/exec", {
-  "prepareCmd": "echo ${nextRelease.version} > version.txt"
+  "prepareCmd": "VERSION=${nextRelease.version} make exec-release"
 }]
+```
+```makefile
+exec-release: ## Execution of a new release
+    ./mvnw -q versions:set -DnewVersion=${VERSION}
+    sed -Ei 's/version:.*/version: ${VERSION}/g' openapi.yaml
 ```
 ```json
 ["@semantic-release/git", {
-  "assets": ["CHANGELOG.md", "version.txt"],
+  "assets": ["CHANGELOG.md", "pom.xml", "swagger.json"],
   "message": "chore(release): version ${nextRelease.version}"
 }]
 ```

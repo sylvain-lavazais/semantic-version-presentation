@@ -22,6 +22,13 @@ export-pdf: clean ## Export presentation to pdf (used in GH action)
 	@mv Presentation/reveal.json Presentation/print-options.json
 .PHONY: export-pdf
 
+exec-release: ## Execution of a new release (used in GH action)
+	@./mvnw -q versions:set -DnewVersion=${VERSION}
+	@sed -Ei 's/version:.*/version: ${VERSION}/g' src/doc/docapi/static/openapi.yaml
+	@cat src/doc/docapi/content/changelog/_index.en.md.header > src/doc/docapi/content/changelog/_index.en.md
+	@cat CHANGELOG.md >> src/doc/docapi/content/changelog/_index.en.md
+.PHONY: exec-release
+
 prepare:
 	@npm install @semantic-release/exec -D
 	@npm install @semantic-release/changelog -D
