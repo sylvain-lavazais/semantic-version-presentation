@@ -437,9 +437,15 @@ plugins order matter
 ## going further
 
 release steps mechanism
-`verifyConditions` / `analyzeCommits` / `verifyRelease` / `generateNotes`
-
-`prepare` / `publish` / `addChannel` / `success` / `fail`
+- `verifyConditions`
+- `analyzeCommits`
+- `verifyRelease`
+- `generateNotes`
+- `prepare`
+- `publish`
+- `addChannel`
+- `success`
+- `fail`
 
 Note: inside the whole release mechanism plugins, SR allows to manipulate different steps to execute everything 
 withing the release.
