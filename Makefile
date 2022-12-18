@@ -11,7 +11,7 @@ presentation-w-notes: ## Start the presentation web server
 	@docker run --rm -p 1948:1948 -p 35729:35729 -v $(shell pwd)/Presentation:/slides webpronl/reveal-md:latest /slides --scripts print-format.js --watch
 .PHONY: presentation-w-notes
 
-export-pdf: clean ## Export presentation to pdf
+export-pdf: clean ## Export presentation to pdf (used in GH action)
 	@mv Presentation/print-options.json Presentation/reveal.json
 	@docker run -d -p 1948:1948 -v $(shell pwd)/Presentation:/slides --name reveal-md webpronl/reveal-md:latest /slides
 	@mkdir generation_tmp && sudo chmod 777 generation_tmp

@@ -339,6 +339,8 @@ Note:
 - I2: après, il est possible d'y ajouter d'autres étapes dans semantic release, ils ont tout prévu...
 - I1: Ok ben pour moi, c'est clair, (se tourne vers l’assistance) et vous ? avez-vous des questions ?
 
+https://github.com/semantic-release/semantic-release/blob/master/docs/developer-guide/plugin.md
+
 <!--h-->
 
 ## Merci
