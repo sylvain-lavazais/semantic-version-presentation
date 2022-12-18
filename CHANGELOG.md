@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.9.0...1.9.1) (2022-12-18)
+
+
+### Bug Fixes
+
+* **export-pdf:** fix resolution of export ([3de3952](https://github.com/slavazais-dav/semantic-version-presentation/commit/3de39523e60f44968ac069cccb8640c2ad059c0c))
+
 # [1.9.0](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.8.0...1.9.0) (2022-12-18)
 
 
