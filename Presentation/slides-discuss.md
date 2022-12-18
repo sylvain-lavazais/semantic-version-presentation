@@ -18,7 +18,21 @@ Note:
  - I2: Ouais, ca va bien, bah ecoute montre moi ca.
 
 <!--h-->
+<!-- .slide: data-auto-animate -->
+## Mon magasin de Vin
 
+![](img/myWineStore-swagger-initial.png)
+
+Note: Discussion autour d'une librairie d'étiquette de bouteille vente de vin :
+
+- I1: a besoin de communiquer sa lib au public, a besoin de la diffuser au consommateur
+- I1: demande l'avis de I2 concernant sa lib
+- I2: argumenter sur la maintenabilité, la facon de gérer les versions et l'exposition
+- I2: proposer l'approche Semantic version
+
+<!--v-->
+
+<!-- .slide: data-auto-animate -->
 ## Mon magasin de Vin
 
 ```xml[|5]
@@ -262,7 +276,7 @@ exec-release: ## Execution of a new release
 ```
 ```json
 ["@semantic-release/git", {
-  "assets": ["CHANGELOG.md", "pom.xml", "swagger.json"],
+  "assets": ["CHANGELOG.md", "pom.xml", "openapi.yaml"],
   "message": "chore(release): version ${nextRelease.version}"
 }]
 ```
@@ -271,6 +285,15 @@ Note:
 
 - I2: pour tes poms, il suffit de rajouter la petite commande qui va bien
 - I2: et pour tes fichiers, on les ajoute avec un message de commit
+- I2: pour example ton swagger
+
+<!--v-->
+
+<!-- .slide: data-auto-animate -->
+### Pour bien commencer
+
+![](img/myWineStore-swagger-after.png)
+
 
 <!--v-->
 

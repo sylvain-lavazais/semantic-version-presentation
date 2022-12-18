@@ -383,7 +383,7 @@ exec-release: ## Execution of a new release
 ```
 ```json
 ["@semantic-release/git", {
-  "assets": ["CHANGELOG.md", "pom.xml", "swagger.json"],
+  "assets": ["CHANGELOG.md", "pom.xml", "openapi.yaml"],
   "message": "chore(release): version ${nextRelease.version}"
 }]
 ```
@@ -391,6 +391,8 @@ exec-release: ## Execution of a new release
 Note: on `exec`, we describe what we do just before the release.
 
 on `git`, we describe what we commit on release, and the commit message
+
+you can refer to external script to make what you want with the execution script
 <!--v-->
 
 <!-- .slide: data-auto-animate -->
