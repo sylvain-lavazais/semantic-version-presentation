@@ -1,3 +1,11 @@
+# [1.9.0](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.8.0...1.9.0) (2022-12-18)
+
+
+### Features
+
+* **discuss:** add swagger file example ([6367d74](https://github.com/slavazais-dav/semantic-version-presentation/commit/6367d7402d5b821ca649ea235cbfb4729c2fb902))
+* **presentation:** add more example of exec script ([fb28599](https://github.com/slavazais-dav/semantic-version-presentation/commit/fb28599728aeadc5730449066365e1b578ba6e05))
+
 # [1.8.0](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.7.0...1.8.0) (2022-12-18)
 
 
