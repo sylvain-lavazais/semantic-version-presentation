@@ -1,3 +1,10 @@
+## [1.9.2](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.9.1...1.9.2) (2022-12-22)
+
+
+### Bug Fixes
+
+* **documentation:** add coucou to Readme ([09ad044](https://github.com/slavazais-dav/semantic-version-presentation/commit/09ad044ebe9ae41d14c53213e8995286b9c74dcb))
+
 ## [1.9.1](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.9.0...1.9.1) (2022-12-18)
 
 
