@@ -8,7 +8,6 @@ on:
 jobs:
   build:
     name: export pdf And bump version
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/beta' || github.ref == 'refs/heads/alpha'
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout sources
