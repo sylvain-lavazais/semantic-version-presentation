@@ -1,6 +1,8 @@
 # semantic-version-presentation
 Presentation of usage of a semantic version management on a dev project
 
+coucou
+
 ## how to start presentation
 
 you'll need [docker](https://docs.docker.com/get-docker/) :
