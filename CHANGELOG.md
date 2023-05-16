@@ -1,3 +1,16 @@
+# [1.10.0](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.9.2...1.10.0) (2023-05-16)
+
+
+### Bug Fixes
+
+* **documentation:** removing coucou in readme ([131a626](https://github.com/slavazais-dav/semantic-version-presentation/commit/131a62682626fd3c25fc6e57d2db5940cb7eeaf4))
+
+
+### Features
+
+* **doc:** add coucou ([8cc4310](https://github.com/slavazais-dav/semantic-version-presentation/commit/8cc43109cfd3b98876291839b78bd925050e0f83))
+* **doc:** add coucou ([3f39051](https://github.com/slavazais-dav/semantic-version-presentation/commit/3f3905167d4f42c81d17df3830a6eb8b61f0f472))
+
 # [1.10.0-beta.2](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.10.0-beta.1...1.10.0-beta.2) (2023-05-16)
 
 
