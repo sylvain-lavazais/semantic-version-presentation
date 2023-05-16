@@ -5,8 +5,7 @@ on:
       - main
       - beta
       - pre-*
-  pull_request:
-    types: [ opened, synchronize, reopened ]
+
 jobs:
   build:
     name: export pdf And bump version
