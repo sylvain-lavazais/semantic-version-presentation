@@ -1,3 +1,10 @@
+## [1.10.1-pre-test-prerelease.1](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.10.0...1.10.1-pre-test-prerelease.1) (2023-05-16)
+
+
+### Bug Fixes
+
+* **doc:** removing coucou from readme ([a224434](https://github.com/slavazais-dav/semantic-version-presentation/commit/a22443424167c3286f1032a04c1a17eef610905e))
+
 # [1.10.0](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.9.2...1.10.0) (2023-05-16)
 
 
