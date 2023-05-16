@@ -1,3 +1,10 @@
+# [1.10.0-beta.1](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.9.3-beta.1...1.10.0-beta.1) (2023-05-16)
+
+
+### Features
+
+* **doc:** add coucou ([3f39051](https://github.com/slavazais-dav/semantic-version-presentation/commit/3f3905167d4f42c81d17df3830a6eb8b61f0f472))
+
 ## [1.9.3-beta.1](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.9.2...1.9.3-beta.1) (2023-05-16)
 
 
