@@ -1,3 +1,10 @@
+## [1.9.3-beta.1](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.9.2...1.9.3-beta.1) (2023-05-16)
+
+
+### Bug Fixes
+
+* **documentation:** removing coucou in readme ([131a626](https://github.com/slavazais-dav/semantic-version-presentation/commit/131a62682626fd3c25fc6e57d2db5940cb7eeaf4))
+
 ## [1.9.2](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.9.1...1.9.2) (2022-12-22)
 
 
