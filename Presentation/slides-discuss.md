@@ -320,7 +320,32 @@ Note:
 <!--v-->
 
 <!-- .slide: data-auto-animate -->
-### Pour après
+### Pour après - gestion des pre-release
+
+on peut aussi gérer les pre-release !
+
+```json
+{
+  "branches": [
+    "main",
+    {
+      "name": "pre-*",
+      "prerelease": true
+    }
+  ]
+}
+```
+
+Note:
+
+- I2: Après tout ça, on peut aussi rajouter la gestion des pre-release
+- I1: ah oui, cool, en faite, je pourrais appliquer ça à mon cas présent de version
+- I2: en effet, semantic-release
+
+<!--v-->
+
+<!-- .slide: data-auto-animate -->
+### Pour après - l'ordre des plugins est important
 
 l'ordre des plugins est important
 
@@ -348,7 +373,7 @@ Note:
 <!--v-->
 
 <!-- .slide: data-auto-animate -->
-### Pour après
+### Pour après - les étapes
 
 Les différentes étapes de release
 
