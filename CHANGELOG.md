@@ -1,3 +1,16 @@
+# [1.10.0](https://github.com/lavazais-sylvain/semantic-version-presentation/compare/1.9.2...1.10.0) (2023-06-05)
+
+
+### Bug Fixes
+
+* **CI:** fix decktape usage for pdf export ([cc4405f](https://github.com/lavazais-sylvain/semantic-version-presentation/commit/cc4405f24bbab8549b36da0d4e2a7758e9683b5c))
+
+
+### Features
+
+* **discuss:** add pre-release section ([d2f37be](https://github.com/lavazais-sylvain/semantic-version-presentation/commit/d2f37be05c91ebb194ca03225b12ab42ff04b03e))
+* **doc:** add pre-release section ([4019b90](https://github.com/lavazais-sylvain/semantic-version-presentation/commit/4019b90bf8ba074aa97052589bfc555e891cbbe3))
+
 ## [1.9.2](https://github.com/slavazais-dav/semantic-version-presentation/compare/1.9.1...1.9.2) (2022-12-22)
 
 
