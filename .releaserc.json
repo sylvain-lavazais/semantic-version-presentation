@@ -1,5 +1,11 @@
 {
-  "branches": ["main"],
+  "branches": [
+    "main",
+    {
+      "name": "pre-*",
+      "prerelease": true
+    }
+  ],
   "tagFormat": "${version}",
   "plugins": [
     "@semantic-release/commit-analyzer",
@@ -12,6 +18,10 @@
       "assets": ["Presentation/doc/slides.pdf", "CHANGELOG.md", "version.txt"],
       "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
     }],
-    "@semantic-release/github"
+    ["@semantic-release/github", {
+      "assets": [
+        {"path":  "Presentation/doc/slides.pdf", "label": "PDF Presentation"}
+      ]
+    }]
   ]
 }
