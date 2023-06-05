@@ -412,7 +412,28 @@ npx semantic-release
 <!--v-->
 
 <!-- .slide: data-auto-animate -->
-## going further
+## going further - pre-release management
+
+pre-release branch management
+
+```json
+{
+  "branches": [
+    "main",
+    {
+      "name": "pre-*",
+      "prerelease": true
+    }
+  ]
+}
+```
+
+Note: here the all branch that begin with `pre-` will be manage as pre-releases.
+
+<!--v-->
+
+<!-- .slide: data-auto-animate -->
+## going further - order matter
 
 plugins order matter
 
@@ -430,6 +451,9 @@ plugins order matter
   ]
 }
 ```
+
+Note: the plugins `changelog` is set after the `git` that manage commit, so basically, the changelog file will not be 
+ready for the commit at the time.
 
 <!--v-->
 
