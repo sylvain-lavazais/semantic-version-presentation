@@ -20,7 +20,7 @@ export-pdf: clean ## Export presentation to pdf (used in GH action)
 	@docker run -d -p 1948:1948 -v $(shell pwd)/Presentation:/slides --name reveal-md webpronl/reveal-md:latest /slides
 	@mkdir generation_tmp && sudo chmod 777 generation_tmp
 	@sleep 5
-	@docker run --rm -t --net=host -v $(shell pwd)/generation_tmp:/slides astefanutti/decktape reveal -s 2048x1536 http://localhost:1948/slides.md slides.pdf
+	@docker run --rm -t --net=host -v $(shell pwd)/generation_tmp:/slides astefanutti/decktape:3.7 reveal -s 2048x1536 http://localhost:1948/slides.md slides.pdf
 	@mv -f generation_tmp/slides.pdf Presentation/doc/slides.pdf
 	@make clean
 	@mv Presentation/reveal.json Presentation/print-options.json
