@@ -24,6 +24,6 @@ make help
 
 ## contacts
 
-[sylvain LAVAZAIS](mailto:sylvain.lavazais@davidson.fr)
+[sylvain LAVAZAIS](mailto:slavazais@pm.me)
 
 
