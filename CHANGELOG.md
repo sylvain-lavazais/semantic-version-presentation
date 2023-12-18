@@ -1,17 +1,8 @@
 # [1.11.0](https://github.com/lavazais-sylvain/semantic-version-presentation/compare/1.10.1...1.11.0) (2023-12-18)
 
-
 ### Bug Fixes
 
 * **version:** rollback version in file ([11e8a99](https://github.com/lavazais-sylvain/semantic-version-presentation/commit/11e8a991fd0f91af926b0d356f0cda6fab86051d))
-
-
-### Features
-
-* **process:** exporting the next-version in WrkFlw ([522b7c2](https://github.com/lavazais-sylvain/semantic-version-presentation/commit/522b7c24b15dd81ff3cc579a5366d87ce1cf0065))
-
-# [1.11.0](https://github.com/lavazais-sylvain/semantic-version-presentation/compare/1.10.1...1.11.0) (2023-12-18)
-
 
 ### Features
 
