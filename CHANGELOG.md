@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/lavazais-sylvain/semantic-version-presentation/compare/1.11.0...1.12.0) (2023-12-18)
+
+
+### Features
+
+* **doc:** fullfil readme file ([7e91ea6](https://github.com/lavazais-sylvain/semantic-version-presentation/commit/7e91ea6d010985368cad8c27b15d54ad58032167))
+
 # [1.11.0](https://github.com/lavazais-sylvain/semantic-version-presentation/compare/1.10.1...1.11.0) (2023-12-18)
 
 ### Bug Fixes
