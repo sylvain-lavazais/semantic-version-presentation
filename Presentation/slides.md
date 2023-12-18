@@ -151,7 +151,7 @@ Note: versions for build metadata should be separated from the rest of the versi
 <!--v-->
 
 <!-- .slide: data-auto-animate -->
-### increment rules
+### Increment rules
 
 any modification after first release is a new version
 
@@ -166,7 +166,7 @@ Note: any modification after the first release must imply a modification of the 
 <!--v-->
 
 <!-- .slide: data-auto-animate -->
-### increment rules
+### Increment rules
 
 Patch version
 
@@ -181,7 +181,7 @@ Note: go to the next slide for notes
 <!--v-->
 
 <!-- .slide: data-auto-animate -->
-### increment rules
+### Increment rules
 
 Patch version
 
@@ -198,7 +198,7 @@ Note: bug fixes should increment the patch version
 <!--v-->
 
 <!-- .slide: data-auto-animate -->
-### increment rules
+### Increment rules
 
 Minor version
 
@@ -213,7 +213,7 @@ Note: go to the next slide for notes
 <!--v-->
 
 <!-- .slide: data-auto-animate -->
-### increment rules
+### Increment rules
 
 Minor version
 
