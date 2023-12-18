@@ -22,6 +22,26 @@ any help
 make help
 ```
 
+```text
+ Semantic Version presentation
+ ================
+
+Usage:
+  make <option>
+
+Presentation
+  presentation               Start the presentation web server
+  presentation-w-notes       Start the presentation web server (with notes)
+
+Documentation
+  export-pdf                 Export presentation to pdf (used in GH action)
+
+Misc
+  exec-release               Execution of a new release (used in GH action)
+  clean                      Clean docker image
+  help                       Display this help
+```
+
 ## contacts
 
 [sylvain LAVAZAIS](mailto:slavazais@pm.me)
