@@ -35,6 +35,7 @@ exec-release: ## Execution of a new release (used in GH action)
 	@sed -Ei 's/version:.*/version: ${VERSION}/g' src/doc/docapi/static/openapi.yaml
 	@cat src/doc/docapi/content/changelog/_index.en.md.header > src/doc/docapi/content/changelog/_index.en.md
 	@cat CHANGELOG.md >> src/doc/docapi/content/changelog/_index.en.md
+	@export NEXT_VERSION=${VERSION}
 .PHONY: exec-release
 
 prepare:

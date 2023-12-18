@@ -28,3 +28,10 @@ jobs:
             @semantic-release/git@10.0.1
         env:
           GH_TOKEN: ${{ secrets.CI_TOKEN }}
+      - name: store output next version
+        id: next_version
+        run: |
+          echo "NEXT_VERSION=`git describe --tags --abbrev=0`" >> $GITHUB_OUTPUT
+      - name: read next version
+        run: |
+          echo ${{ steps.next_version.outputs.NEXT_VERSION }}

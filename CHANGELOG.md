@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/lavazais-sylvain/semantic-version-presentation/compare/1.10.1...1.11.0) (2023-12-18)
+
+
+### Features
+
+* **process:** test exporting the next-version in WrkFlw ([b6e16a0](https://github.com/lavazais-sylvain/semantic-version-presentation/commit/b6e16a03ef9abd27a9345b6e596ecbe034879c89))
+
 ## [1.10.1](https://github.com/lavazais-sylvain/semantic-version-presentation/compare/1.10.0...1.10.1) (2023-12-18)
 
 
