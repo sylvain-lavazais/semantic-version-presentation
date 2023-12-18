@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/lavazais-sylvain/semantic-version-presentation/compare/1.10.0...1.10.1) (2023-12-18)
+
+
+### Bug Fixes
+
+* **presentation:** fix typo ([08ccc59](https://github.com/lavazais-sylvain/semantic-version-presentation/commit/08ccc59d28a61fb66d36e3a1b1968354834fc7c3))
+
 # [1.10.0](https://github.com/lavazais-sylvain/semantic-version-presentation/compare/1.9.2...1.10.0) (2023-06-05)
 
 
