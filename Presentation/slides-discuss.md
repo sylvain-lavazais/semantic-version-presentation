@@ -14,8 +14,8 @@ Note:
 - interlocuteur 1 : arrive avec sa lib de vin
 - interlocuteur 2 : explique la demarche semantic version
 
- - I1: Salut I2, comment tu va ? dis donc, je voudrais te presenter un truc sur lequel je bosse
- - I2: Ouais, ca va bien, bah ecoute montre moi ca.
+ - I1 : Salut I2, comment tu vas ? dis donc, je voudrais te presenter un truc sur lequel je bosse
+ - I2 : Ouais, ca va bien, bah écoute montre moi ca.
 
 <!--h-->
 <!-- .slide: data-auto-animate -->
