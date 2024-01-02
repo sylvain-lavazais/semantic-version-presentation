@@ -9,19 +9,35 @@
   "tagFormat": "${version}",
   "plugins": [
     "@semantic-release/commit-analyzer",
-    ["@semantic-release/exec", {
-      "prepareCmd": "echo ${nextRelease.version} > version.txt"
-    }],
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "echo ${nextRelease.version} > version.txt"
+      }
+    ],
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
-    ["@semantic-release/git", {
-      "assets": ["Presentation/doc/slides.pdf", "CHANGELOG.md", "version.txt"],
-      "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
-    }],
-    ["@semantic-release/github", {
-      "assets": [
-        {"path":  "Presentation/doc/slides.pdf", "label": "PDF Presentation"}
-      ]
-    }]
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "Presentation/doc/slides.pdf",
+          "CHANGELOG.md",
+          "version.txt"
+        ],
+        "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
+      }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          {
+            "path": "Presentation/doc/slides.pdf",
+            "label": "PDF Presentation"
+          }
+        ]
+      }
+    ]
   ]
 }
