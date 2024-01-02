@@ -392,7 +392,7 @@ Note: on `exec`, we describe what we do just before the release.
 
 on `git`, we describe what we commit on release, and the commit message
 
-you can refer to external script to make what you want with the execution script
+you can refer to an external script to make what you want with the execution script
 <!--v-->
 
 <!-- .slide: data-auto-animate -->
