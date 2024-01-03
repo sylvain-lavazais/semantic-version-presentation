@@ -1,3 +1,17 @@
+## [1.12.3](https://github.com/lavazais-sylvain/semantic-version-presentation/compare/1.12.2...1.12.3) (2024-01-03)
+
+
+### Bug Fixes
+
+* **presentation:** fix typo ([#11](https://github.com/lavazais-sylvain/semantic-version-presentation/issues/11)) ([ba80807](https://github.com/lavazais-sylvain/semantic-version-presentation/commit/ba8080719b4786702767f686097999e7ff8de882))
+* **release:** fixing release workflow configuration ([#13](https://github.com/lavazais-sylvain/semantic-version-presentation/issues/13)) ([260f98e](https://github.com/lavazais-sylvain/semantic-version-presentation/commit/260f98ee35a8302e370ec8bb2b1b921309795e91))
+* **release:** testing fix ([e5fa107](https://github.com/lavazais-sylvain/semantic-version-presentation/commit/e5fa10744a2729431db79bff1484d578fab14b00))
+
+
+### Miscellaneous
+
+* **release:** release test ([e784be8](https://github.com/lavazais-sylvain/semantic-version-presentation/commit/e784be88d3e25003ce944a590ed00426d7148cd5))
+
 ## [1.12.1](https://github.com/lavazais-sylvain/semantic-version-presentation/compare/1.12.0...1.12.1) (2024-01-02)
 
 
