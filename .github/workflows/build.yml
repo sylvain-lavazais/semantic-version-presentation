@@ -30,6 +30,7 @@ jobs:
             @semantic-release/github
             @semantic-release/exec
             @semantic-release/git
+            conventional-changelog-conventionalcommits
         env:
           GH_TOKEN: ${{ secrets.CI_TOKEN }}
       - name: store output next version
