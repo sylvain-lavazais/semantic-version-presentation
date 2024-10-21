@@ -1,3 +1,9 @@
+## [1.12.5](https://github.com/sylvain-lavazais/semantic-version-presentation/compare/1.12.4...1.12.5) (2024-10-21)
+
+### Miscellaneous
+
+* **build:** bump of sem-rel ([546a107](https://github.com/sylvain-lavazais/semantic-version-presentation/commit/546a10798a6e81a3b59aae3a57d6f7c277a2a0b1))
+
 ## [1.12.4](https://github.com/sylvain-lavazais/semantic-version-presentation/compare/1.12.3...1.12.4) (2024-10-21)
 
 ### Miscellaneous
