@@ -1,3 +1,10 @@
+## [1.12.4](https://github.com/sylvain-lavazais/semantic-version-presentation/compare/1.12.3...1.12.4) (2024-10-21)
+
+### Miscellaneous
+
+* **code owners:** changing my reference ([d15d09e](https://github.com/sylvain-lavazais/semantic-version-presentation/commit/d15d09e8c6dc89924ee9620250b67b4fc6f3d606))
+* **workflow:** update of actions ([3df7a7c](https://github.com/sylvain-lavazais/semantic-version-presentation/commit/3df7a7cca1b6d6ace7b8870637e28a5b908326e2))
+
 ## [1.12.3](https://github.com/lavazais-sylvain/semantic-version-presentation/compare/1.12.2...1.12.3) (2024-01-03)
 
 
